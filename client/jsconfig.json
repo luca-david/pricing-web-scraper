@@ -4,7 +4,9 @@
     "checkJs": true,
     "strictNullChecks": false,
     "moduleResolution": "bundler",
-    "skipLibCheck": true
+    "target": "ESNext",
+    "module": "ESNext",
+    "types": ["vite/client"]
   },
   "include": ["src"]
 }
