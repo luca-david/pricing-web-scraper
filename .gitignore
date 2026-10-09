@@ -1,17 +1,24 @@
-# Dependencies
+# Dependencies (Root & client/)
 node_modules/
-client/node_modules/
+**/node_modules/
 
-# Environment Variables & Secrets
+# Build & Output Folders (Vite / Express)
+dist/
+build/
+**/dist/
+**/dist-ssr/
+*.tsbuildinfo
+
+# Vite & Tooling Caches
+.vite/
+**/.vite/
+.eslintcache
+
+# Environment Variables & Local Overrides
 .env
 .env.local
 .env.*.local
-
-# Build Outputs (TypeScript & Vite)
-dist/
-build/
-client/dist/
-*.tsbuildinfo
+*.env
 
 # Playwright Test & Scraping Artifacts
 test-results/
@@ -19,7 +26,7 @@ playwright-report/
 blob-report/
 playwright/.cache/
 
-# Debug Images & Tooling State (from your project directory)
+# Debug Images & Local Tooling State
 bolt-state.json
 debug_*.png
 debugg.png
@@ -32,15 +39,8 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Operating System Files
+# OS & Editor Files
 .DS_Store
 Thumbs.db
-
-# IDEs & Code Editors
 .vscode/
 .idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?

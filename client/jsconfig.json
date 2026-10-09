@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "checkJs": true,
+    "strictNullChecks": false,
+    "moduleResolution": "bundler",
+    "skipLibCheck": true
+  },
+  "include": ["src"]
+}

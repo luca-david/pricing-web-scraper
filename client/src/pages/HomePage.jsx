@@ -1,0 +1,35 @@
+import { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+
+
+
+export function HomePage() {
+  const [count, setCount] = useState(0)
+  const navigate = useNavigate()
+
+  return (
+    <>
+      <section id="center">
+        <div className="hero">
+          Eu cand vreau sa iau chestii la reducere
+        </div>
+
+        <div>
+          <h1> Price Web Scraper </h1>
+          <p>
+            Apasa pe <code>buton</code> ca sa vezi care sunt <code>preturile</code>
+          </p>
+        </div>
+        <button
+          type="button"
+          className="counter"
+          onClick={() => navigate('/canda')}          
+        >
+          Vreau shaorma
+        </button>
+      </section>
+    </>
+  )
+}
+
+export default HomePage
