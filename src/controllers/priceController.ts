@@ -168,6 +168,12 @@ export const getCurrentPricesCAndA = async (req: Request, res: Response) => {
     console.log('The original price: ', price?.originalPrice);
     console.log('Discount percent: ', price?.discountPercent);
     
+    if (price === null) {
+        return res.status(404).json({
+            'message': 'No prices found for the given selector'
+        })
+    }
+
     return res.status(200).json({
         'message': 'Succesfully retrieved prices from site',
         'data': price

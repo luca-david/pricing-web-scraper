@@ -226,3 +226,9 @@
     }
   }
 }
+
+.button-group {
+  display: flex;
+  gap: 12px; /* Adjust spacing between buttons here */
+  flex-wrap: wrap; /* Allows buttons to wrap neatly on smaller screens */
+}
