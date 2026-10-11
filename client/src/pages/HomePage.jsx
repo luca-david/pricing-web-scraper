@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
-
-
 export function HomePage() {
   const [count, setCount] = useState(0)
   const navigate = useNavigate()

@@ -1,8 +1,8 @@
 import { Router } from "express"
-import { getCurrentPrices } from "../controllers/priceController.js";
+import { getCurrentPricesCAndA } from "../controllers/priceController.js";
 
 const router = Router();
 
-router.get('/current-prices', getCurrentPrices);
+router.get('/current-prices-canda', getCurrentPricesCAndA);
 
 export default router;

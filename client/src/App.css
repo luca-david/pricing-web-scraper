@@ -182,3 +182,47 @@
     border-right-color: var(--border);
   }
 }
+
+/* Form Input & Label Styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-h);
+    cursor: pointer;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--social-bg);
+    color: var(--text-h);
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+
+    &::placeholder {
+      opacity: 0.5;
+    }
+
+    &:hover {
+      border-color: var(--accent-border);
+    }
+
+    &:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-bg);
+    }
+  }
+}

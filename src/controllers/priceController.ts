@@ -57,7 +57,7 @@ function pickItem(items: any[], wantedName: string): any | null {
 
 async function scrapePriceFromUrl(url: string, selector: string): Promise<PriceResult | null> {
     //launch browser
-    const browser = await chromium.launch({ headless: false });
+    const browser = await chromium.launch({ headless: true });
     const context = await browser.newContext({
         userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
         locale: 'ro-RO',
@@ -147,13 +147,17 @@ async function scrapePriceFromUrl(url: string, selector: string): Promise<PriceR
     }
 }
 
-export const getCurrentPrices = async (req: Request, res: Response) => {
+export const getCurrentPricesCAndA = async (req: Request, res: Response) => {
     
-    const { url, selector } = req.body;
+    const selector = req.query.selector;
 
-    if (!url || !selector) {
+    console.log('selector is ', selector)
+
+    const url = "https://food.bolt.eu/ro-ro/325-bucharest/p/44578-shaormeria-ca-1-decembrie/"
+
+    if (!selector || typeof selector !== 'string') {
         return res.status(404).json({
-            'error': 'Missing url or selector'
+            'error': 'Missing selector'
         });
     }
 
