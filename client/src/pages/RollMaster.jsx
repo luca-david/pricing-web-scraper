@@ -12,11 +12,8 @@ export function RollMaster() {
         try {
             const params = new URLSearchParams({ selector: productName });
             const response = await fetch('/api/prices/current-prices-roll-master?'+params);
-            const { data: priceData } = await response.json();
-
-            console.log('/api/prices/current-prices-roll-master?'+params);
-            console.log(priceData);
-
+            const { data: priceData, message: priceMessage } = await response.json();
+            console.log(priceMessage)
             setPriceResult(priceData);
         } catch (error) {
             console.error('Error while fetching the price', error);
@@ -45,7 +42,7 @@ export function RollMaster() {
                 </div>
 
                 <div>
-                    <button className="counter" onClick={handleSubmit}>
+                    <button className="counter">
                         { loading ? 'Fetching...' : 'Get Price'}
                     </button>
                 </div>
@@ -55,15 +52,15 @@ export function RollMaster() {
                 </div>
 
                 <div className='button-group'>
-                    <button className='counter' onClick={() => setProductName("Wok udon cu pui in sos Teriyaki")}>
+                    <button type="button" className='counter' onClick={() => setProductName("Wok udon cu pui in sos Teriyaki")}>
                         Udon Noodles in Sossy Teriyaki
                     </button>
 
-                    <button className='counter' onClick={() => setProductName("Philadelphia Tempura")}>
+                    <button type="button" className='counter' onClick={() => setProductName("Philadelphia Tempura")}>
                         Philadelphia Tempura
                     </button>
 
-                    <button className='counter' onClick={() => setProductName("Somon Mango Blue Cheese")}>
+                    <button type="button" className='counter' onClick={() => setProductName("Somon Mango Blue Cheese")}>
                         Somon Mango Blue Cheese
                     </button>
                 </div>
@@ -76,7 +73,7 @@ export function RollMaster() {
                     
                     {priceResult ? (
                         <div>
-                        <p><strong>Price:</strong> {priceResult.stringPrice} RON</p>
+                        <p><strong>Price:</strong> {priceResult.stringPrice}</p>
                         </div>
                     ) : (
                         <p>No price data found for this product.</p>

@@ -195,8 +195,9 @@ export const getCurrentPricesRollMaster = async (req: Request, res: Response) =>
     const price = await scrapePriceFromUrl(url, selector);
 
     if (price === null) {
-        return res.status(404).json({
-            'error': 'No prices were found for the given selector'
+        return res.status(200).json({
+            'message': 'No prices were found for the given selector',
+            'data': null
         });
     }
 
