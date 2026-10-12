@@ -179,3 +179,29 @@ export const getCurrentPricesCAndA = async (req: Request, res: Response) => {
         'data': price
     });
 }
+
+export const getCurrentPricesRollMaster = async (req: Request, res: Response) => {
+
+    const selector = req.query.selector;
+
+    const url = "https://food.bolt.eu/ro-ro/325-bucharest/p/4791-roll-master-titan/"
+
+    if (!selector || typeof selector !== 'string') {
+        return res.status(400).json({
+            'error': 'Selector is missing or invalid'
+        })
+    }
+
+    const price = await scrapePriceFromUrl(url, selector);
+
+    if (price === null) {
+        return res.status(404).json({
+            'error': 'No prices were found for the given selector'
+        });
+    }
+
+    return res.status(200).json({
+        'message': 'Successfully retrieved the price for ' + selector ,
+        'data': price
+    })
+}

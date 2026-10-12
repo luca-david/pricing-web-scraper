@@ -18,13 +18,27 @@ export function HomePage() {
             Apasa pe <code>buton</code> ca sa vezi care sunt <code>preturile</code>
           </p>
         </div>
-        <button
+
+        <div className='button-group'>
+          <button
           type="button"
           className="counter"
           onClick={() => navigate('/canda')}          
-        >
-          Vreau shaorma
+          >
+            Vreau shaorma
+          </button>
+
+          <button
+            type="button"
+            className="counter"
+            onClick={() => navigate('/roll-master')}          
+          >
+            Vreau sushi
         </button>
+
+        </div>
+        
+
       </section>
     </>
   )
