@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { createDirectLink } from '../utils';
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://price-scraper-backend-6hlu.onrender.com';
+const rawBaseUrl = import.meta.env.VITE_API_BASE_URL || 'https://price-scraper-backend-6hlu.onrender.com';
+const API_BASE_URL = rawBaseUrl.replace(/\/$/, '');
 
 export default function CAndAPage() {
   const [productName, setProductName] = useState('')
