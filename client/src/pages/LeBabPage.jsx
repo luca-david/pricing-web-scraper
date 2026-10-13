@@ -45,8 +45,8 @@ export default function LeBab() {
       <form onSubmit={handleSubmit} style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px' }}>
         {/* Label & Input Group */}
         <div className="form-group">
-          <label htmlFor="canda-product-name">Product Name</label>
-          <input id="canda-product-name"
+          <label htmlFor="le-bab-product-name">Product Name</label>
+          <input id="le-bab-product-name"
             type="input"
             value={productName}
             onChange={(e) => setProductName(e.target.value)}

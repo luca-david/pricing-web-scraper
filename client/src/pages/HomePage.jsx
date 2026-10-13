@@ -39,7 +39,7 @@ export function HomePage() {
           <button
             type="button"
             className="counter"
-            onClick={() => navigate('/roll-master')}          
+            onClick={() => navigate('/le-bab-fried-chicken')}          
           >
             Vreau burger
           </button>
