@@ -230,7 +230,7 @@ export const getCurrentPricesLeBab = async (req: Request, res: Response) => {
         });
     }
 
-    return res.status(500).json({
+    return res.status(200).json({
         'message': 'Successfully scraped price for ' + selector,
         'data': price,
         'url': url
