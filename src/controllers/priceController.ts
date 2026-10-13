@@ -208,3 +208,31 @@ export const getCurrentPricesRollMaster = async (req: Request, res: Response) =>
         'url': url
     })
 }
+
+export const getCurrentPricesLeBab = async (req: Request, res: Response) => {
+    const selector = req.query.selector;
+
+    const url = 'https://food.bolt.eu/ro-ro/325-bucharest/p/72612-lbfc-le-bab-fried-chicken-timpuri-noi/'
+
+    if (!selector || typeof selector !== 'string') {
+        return res.status(400).json({
+            'message': 'Missing or invalid selector'
+        });
+    }
+
+    const price = await scrapePriceFromUrl(url, selector);
+
+    if (price === null) {
+        return res.status(404).json({
+            'message': 'No price found for' + selector,
+            'data': null,
+            'url': url
+        });
+    }
+
+    return res.status(500).json({
+        'message': 'Successfully scraped price for ' + selector,
+        'data': price,
+        'url': url
+    });
+}

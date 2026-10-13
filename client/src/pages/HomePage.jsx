@@ -34,7 +34,15 @@ export function HomePage() {
             onClick={() => navigate('/roll-master')}          
           >
             Vreau sushi
-        </button>
+          </button>
+
+          <button
+            type="button"
+            className="counter"
+            onClick={() => navigate('/roll-master')}          
+          >
+            Vreau burger
+          </button>
 
         </div>
         
