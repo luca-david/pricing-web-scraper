@@ -96,14 +96,14 @@ async function scrapePriceFromUrl(url: string, selector: string): Promise<PriceR
             }
         });
 
-        await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
+        await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
 
-        // 4. Poll until one of the captured responses contains our item (max 30 s).
+        // 4. Poll until one of the captured responses contains our item (max 60 s).
         //    The menu is fetched after the page loads, and possibly in several calls.
         const allItems: any[] = [];
         let processed = 0;
         let found: any | null = null;
-        const deadline = Date.now() + 30000;
+        const deadline = Date.now() + 60000;
 
         while (!found && Date.now() < deadline) {
             // only look at payloads that arrived since the last loop
