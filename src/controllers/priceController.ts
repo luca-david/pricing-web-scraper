@@ -1,4 +1,4 @@
-import { chromium, type Page } from "playwright";
+import { chromium, type Browser, type Page } from "playwright";
 import { type Request, type Response } from "express";
 import { STATE_PATH } from "./sessionController.js";
 
@@ -55,9 +55,22 @@ function pickItem(items: any[], wantedName: string): any | null {
     );
 }
 
+let browser: Browser | null = null;
+
+// Helper to get or reuse the existing browser process
+const getBrowser = async () => {
+  if (!browser || !browser.isConnected()) {
+    browser = await chromium.launch({
+      headless: true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
+    });
+  }
+  return browser;
+};
+
 async function scrapePriceFromUrl(url: string, selector: string): Promise<PriceResult | null> {
     //launch browser
-    const browser = await chromium.launch({ headless: true });
+    const browser = await getBrowser();
     const context = await browser.newContext({
         userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
         locale: 'ro-RO',
@@ -66,6 +79,8 @@ async function scrapePriceFromUrl(url: string, selector: string): Promise<PriceR
         permissions: ['geolocation'],
     });
     const page: Page = await context.newPage();
+
+    await page.route('**/*.{png,jpg,jpeg,svg,css,woff,woff2}', (route) => route.abort());
 
     try {
         // 2. Force our delivery coordinates on the menu request.
@@ -143,7 +158,7 @@ async function scrapePriceFromUrl(url: string, selector: string): Promise<PriceR
     } finally {
         // 7. Always close the browser, even if something above threw.
         await context.close();
-        await browser.close();
+        // await browser.close();
     }
 }
 
