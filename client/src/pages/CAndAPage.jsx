@@ -18,10 +18,15 @@ export default function CAndAPage() {
         const response = await fetch(`/api/prices/current-prices-canda?${params.toString()}`, { 
             method: 'GET',
         });
-        const {data: data, url: url} = await response.json();
-        //store the backend response in state
-        setPriceResult(data);
-        setProductUrl(url);
+        const {data: data, message: message, url: url} = await response.json();
+        //store the backend response in state if data is valid
+        if (data) {
+            setPriceResult(data);
+            setProductUrl(url);
+        } else {
+            setPriceResult(null);
+            setProductUrl(null);
+        }
     } catch (error) {
         console.error("Error fetching price", error);
     } finally {
