@@ -9,10 +9,8 @@ export function RollMaster() {
     const createDirectLink = (url, productName) => {
         if (!url) return '#';
         
-        const cleanName = productName.replace(/\s+/g, ' ').trim();
-        console.log(cleanName)
         //encode name (spaces become %20)
-        const encodedName = encodeURIComponent(cleanName);
+        const encodedName = encodeURIComponent(productName.trim());
 
         return `${url}#:~:text=${encodedName}`;
     };
