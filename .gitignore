@@ -27,7 +27,7 @@ blob-report/
 playwright/.cache/
 
 # Debug Images & Local Tooling State
-bolt-state.json
+# bolt-state.json
 debug_*.png
 debugg.png
 

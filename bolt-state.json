@@ -1,0 +1,103 @@
+{
+  "cookies": [
+    {
+      "name": "_cfuvid",
+      "value": "wONxNfShTx_tRg_a7h8xWuITx3QnkrtStGKbwMzehl8-1791212832.5649683-1.0.1.1-QMZnZMVXlNGBgpIfqqH3TVih0i_BwHZFbeLiDG5cSNs",
+      "domain": ".bolt.eu",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "cf_clearance",
+      "value": "O267XTrtIZsOTgN.kIkBaFstUYkeOvDr38wupGGhBFM-1791212834-1.2.1.1-ooX5pGE2po1uqZysQiVLwMMc7wkmSwIREEtBjIIZAfbayFhcbZpksoSDcOB.S.xMUQ6QQ6WyJzzAo9veDgSVyPL9BpcsyDm_ghAonip9Kp224NGuFTpne65H4.zy2623lw2Wr4zlHGocmhGN9EPoFDhua8b3bI3THJx9M24QTOHgeUHpL_KySHhwUDsZ6vlLWp9V_5VyyKxgagR18NI4_2AWbEqOPm5RTLdb1hvzycRPDqLLNdUgRCbTi7ADXHZuJNscBCVc4KV.EGpBxWofzKmScYjW0SSZTen2u.3wp8U.OogKNu5vwhWTG6efieS8S2Z44EsATJym1npp3Xommybi1_avMyDqEFibjdEpUrrMS5ggjzrzod_bA7VLrqQXS7RE0zTT00cc1HvaqTfqZA",
+      "domain": ".bolt.eu",
+      "path": "/",
+      "expires": 1822748833.819693,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://bolt.eu",
+      "_crHasCrossSiteAncestor": false
+    },
+    {
+      "name": "mp_d34cbdea4b58a3b884e4b999930076ef_mixpanel",
+      "value": "%7B%22distinct_id%22%3A%22delivery-149689915%22%2C%22%24device_id%22%3A%22c236d858-b39b-4dce-aa3a-415550ac3987%22%2C%22%24initial_referrer%22%3A%22%24direct%22%2C%22%24initial_referring_domain%22%3A%22%24direct%22%2C%22locationPermissionStatus%22%3A%22DENIED%22%2C%22locationServicesStatus%22%3A%22UNKNOWN%22%2C%22app_version%22%3A%22FW.1.118%22%2C%22%24user_id%22%3A%22delivery-149689915%22%7D",
+      "domain": ".bolt.eu",
+      "path": "/",
+      "expires": 1822748892,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://food.bolt.eu",
+      "localStorage": [
+        {
+          "name": "mmkv_9$a_dev-menu-main_9$a___mmkv_internal_is_initialised",
+          "value": ":ljm}:"
+        },
+        {
+          "name": "mmkv_9$a_store_9$a_cachedFlags_v2",
+          "value": ":cD:}vyzt}G|}n}twh}jkGk}llqvkD:\"~ytk}4D:}vyzt}Gj}y{lG~j}}b}D:\"~ytk}4D:}`hwGmh|yl}kG{pyvv}tD:\"D:hjw|m{lqwvD:4D:}vyzt}G|yjsGuw|}GkmhhwjlD:\"ljm}4D:quhj}kkqwvkGljy{sqvD:\"cD:qkG}vyzt}|D:\"ljm}4D:uqvG}`hwkmj}Glpj}kpwt|D:\"+((4D:zyl{pqvGqvl}jnytD:\")-(((4D:pyj|Gkoql{pGw~~D:\"~ytk}4D:uy`Gj}ljq}kD:\"+4D:uqvGnqkqzt}Gh}j{}vlGlpj}kpwt|D:\"-(e4D:{tq{skGljy{sqvD:\"cD:qkG}vyzt}|D:\"ljm}4D:zyl{pqvGqvl}jnytD:\")-(((4D:uy`Gj}ljq}kD:\"+e4D:kpwmt|Gmk}G{jwkkGyhhGtwqvG~}ylmj}D:\"ljm}4D:ymlwGkqvGqvGn*G}vyzt}|D:\"~ytk}4D:k}vljaG{wv~qD:\"cD:qkG}vyzt}|D:\"~ytk}4D:k}kkqwvGj}htyaG}vyzt}|D:\"~ytk}4D:|kvD:\"D:D:4D:kyuht}Gjyl}D:\"(6*-4D:ljy{}kGkyuht}Gjyl}D:\"(4D:uy`Gzj}y|{jmuzkD:\")((4D:k}kkqwvGj}htyaGuy`Gzj}y|{jmuzkD:\"+((4D:uy`Gnytm}Gt}vlpD:\"*-(4D:vwjuytqb}Gzj}y|lpD:\"+4D:}vyzt}GyhhGpyvGljy{sqvD:\"~ytk}4D:vwjuytqb}Guy`Gzj}y|lpD:\")(((4D:j}|m`G}vpyv{}jG}vyzt}|D:\"~ytk}4D:j}y{lGvylqn}Gljy{qvG}vyzt}|D:\"ljm}4D:j}y{lGvynqylqwvGljy{qvG}vyzt}|D:\"~ytk}4D:j}y{lGvylqn}Gljy{qvGuy`Gljyvky{lqwvG|mjylqwvD:\"+((((4D:ljy{qvG{mklwuGpllhGkhyvG}vpyv{}jG}vyzt}|D:\"ljm}4D:ljy{qvG{mklwuGljyvky{lqwvkG}vyzt}|D:\"~ytk}e4D:mh|yl}Gtw{yt}G~jwuGhjw~qt}D:\"cD:qkG}vyzt}|D:\"~ytk}e4D:}vyzt}GkqvmtyjGuyjs}lqvGlwwtD:\"ljm}4D:j}{}vltaGnq}o}|Ghjwnq|}jkGn*D:\"cD:qkG}vyzt}|D:\"~ytk}4D:kmj~y{}Gpwu}D:\"~ytk}4D:kmj~y{}Gk}yj{pD:\"~ytk}4D:kmj~y{}Gklwj}kD:\"~ytk}e4D:}`hwGquy}G{y{p}GtquqlkD:\"cD:qkG}vyzt}|D:\"~ytk}4D:uy`Gu}uwjaG{wklGzal}kD:\")(, -/.((4D:uy`Gu}uwjaG{wmvlD:\"-(4D:uy`G|qksGkqb}Gzal}kD:\"(ee:"
+        },
+        {
+          "name": "mmkv_9$a_network-logger-settings_9$a___mmkv_internal_is_initialised",
+          "value": ":ljm}:"
+        },
+        {
+          "name": "mmkv_9$a_secret",
+          "value": "fzz~}4!!labz k{!mo|kk|}!"
+        },
+        {
+          "name": "mmkv_9$a_store_9$a_devId",
+          "value": ":/*{ ~~} 5| z!5,!).5!*.-5|{!+~,{{zy(~:"
+        },
+        {
+          "name": "mmkv_9$a_store_9$a_persist:root",
+          "value": ":cD:y{lqn}Wj|}jkD:\"D:cDDD:y{lqn}Wj|}jQ|kDDD:\"CEeD:4D:k}kkqwvD:\"D:cDDD:zykq{DDD:\"cDDD:ymlpLws}vDDD:\"DDD:|Ots@b](WLA,WLs`VLw)Ab]aVOIaWK(bU\\^sTLI+UrMlALNpVK)sV_](WOU*B_M-V*U%DDD:4DDD:~qjklVyu}DDD:\"vmtt4DDD:tyklVyu}DDD:\"vmtt4DDD:hpwv}DDD:\"vmtt4DDD:}uyqtDDD:\"vmtt4DDD:ymlpMk}jvyu}DDD:\"DDD:mq|G),!. !!)-DDD:4DDD:twqvOqlpWhlqwvk[wv~qDDD:\"cDDD:nqkqzt}DDD:\"CcDDD:lah}DDD:\"DDD:hpwv}DDD:eE4DDD:twqvK{j}}vDDD:\"DDD:hpwv}Gvmuz}jDDD:4DDD:{wttyhk}|DDD:\"CE4DDD:mq[wvl}vlDDD:\"cDDD:lqlt}DDD:\"DDD:Uúv{yj}y8hj}~}jylě48tqnjylě8jyhq|DDD:4DDD:klyjlmhGquy}DDD:\"cDDD:mjtDDD:\"DDD:pllhk\"77quy}k6zwtl6}m7|}tqn}jaG}yl}j7klyjlmhGquy}7zwtl5~ww|5|}~ymtl6hvDDD:4DDD:kqb}DDD:\"cDDD:oq|lpDDD:\"+/-4DDD:p}qplDDD:\"-).ee4DDD:kqvmhG|qk{tyqu}jDDD:\"DDD:Hjqv8övj}qkljyj}48öȃq8}`hjquq8y{wj|mt8{m8hjqnqj}8ty8$y8pj}~%?pllhk\"77zwtl6}m7jw7t}yt7'{yl}wja%|}tqn}ja?&L}ju}v}8ȁq8[wv|qȃqq8$7y&8ȁq8$y8pj}~%?pllhk\"77zwtl6}m7}v7hjqny{a7'{yl}wja%|}tqn}ja?&Hwtqlq{y8|}8{wv~q|}vȃqytqlyl}$7y&6DDDDv]kl}8hwkqzqt8kě8öȃq8ljquql}u8hjwuwȃqq8h}vljm8k}jnq{qqt}8vwyklj}8‌8l}8hwȃq8|}byzwvy8wjq{úv|8y{{}kúv|8Hj}~}jqvȃ}t}8|}8{wumvq{yj}8|qv8hjw~qtmt8lěm6DDD:ee4DDD:twqvOqlpWhlqwvk]jjwjK{j}}vDDD:\"DDD:mvk}lDDD:4DDD:kpyj}|YmlpLws}vDDD:\"vmtt4DDD:kpyj}|YmlpMk}jvyu}DDD:\"vmtt4DDD:|}nq{}Q|DDD:\"DDD:-{)*-|*!5+()|5,/*-5y-y-5|,y,!{.|}!/{DDD:4DDD:q|}vlq~aMk}jJ}im}klKlyl}DDD:\"DDD:mvk}lDDD:4DDD:kqvQvOqlpZwtlKpyj}|Lws}vJ}im}klKlyl}DDD:\"DDD:mvk}lDDD:4DDD:hjw~qt}N}jq~q{ylqwvKlyjlJ}im}klKlyl}DDD:\"DDD:mvk}lDDD:4DDD:hjw~qt}N}jq~q{ylqwv[wv~qjuJ}im}klKlyl}DDD:\"DDD:mvk}lDDD:4DDD:hjw~qt}J}qkljylqwv[wuht}l}J}im}klKlyl}DDD:\"DDD:mvk}lDDD:4DDD:qkYmlp}vlq{yl}|DDD:\"~ytk}4DDD:hjw~qt}J}qkljylqwv^wjuNytq|ylqwv]jjwjkDDD:\"vmtt4DDD:qkYmlp}vlq{ylqwvQvHjwj}kkDDD:\"ljm}4DDD:qkTwwmlQvHjwj}kkDDD:\"~ytk}4DDD:{wvlqvm}OqlpKw{qytJ}im}klKlyl}DDD:\"DDD:mvk}lDDD:4DDD:j}k}v|[wv~qjuylqwvLqu}klyuhDDD:\"vmtte4DDD:lws}vDDD:\"cDDD:ymlpJ}im}klKlyl}DDD:\"DDD:mvk}lDDD:4DDD:y{{}kkLws}vDDD:\"DDD:}aRpz_{qWqRQMbQ)VqQkQvJ-{[Q.Qsh@N[R!6}aRsA@JpQrh/QvNbB@R~yOIqWr](WLA,WLs`VKoq|@Vt{t!kz*|hzt!hB[Q.VbI`UrsoVLa~KoqyO^(Qrw`Vbs`Ur]aW\\saT[Rt}PYqWr]+WL]aULA(WLR!6.Si_I\\LOP-`u_PSsWktbZSUU\\nn!y^*(uw^bZb)sK kDDD:4DDD:j}~j}kpLws}vDDD:\"DDD:}aRpz_{qWqRQMbQ)VqQkQvJ-{[Q.Qsh@N[R!6}aRsA@JpQrh/QvNbB@R~yOIqWr](WLA,WLs`VKoq|@Vt{t!kz*|hzt!hB[Q.VbI`UrsoVLaT[Ri|_sqWqQ-VO^rAL(W[)pB\\Y)TLIbVu]lW\\|sVq)uAr)Ars-U\\U)UbAq~KoqyO^(Qrw`Vbs`Ur]aW\\saT[Rt}PYqWr],UrQ*VrQ(WLR!6+t|YIz[Y{M(vtOH_T{s]HLQ^q~(~H(.{Mt^Rm)-i@,DDD:e4DDD:}v}jq{DDD:\"cDDD:k}kkqwvQ|DDD:\"DDD:/*{ ~~} 5| z!5,!).5!*.-5|{!+~,{{zy(~}yl}j)/!)*)* +,DDD:4DDD:mk}jQ|DDD:\"),!. !!)-4DDD:mk}jY{lqnqlaLqu}klyuhDDD:\")/!)*)*!(*).)eeD:4D:yvytalq{kD:\"D:cDDD:qkZjyb}Ymlp}vlq{yl}|DDD:\"~ytk}4DDD:qkKqvmtyjYmlp}vlq{yl}|DDD:\"~ytk}4DDD:qkMQYvytalq{kYmlp}vlq{yl}|DDD:\"~ytk}eD:4D:zyks}l[y{p}D:\"D:ceD:4D:twqvD:\"D:cDDD:hpwv}Hj}~q`DDD:\"DDD:3,(DDD:4DDD:hpwv}Vmuz}jDDD:\"DDD:(//(./.!*-DDD:4DDD:lqu}DDD:\")/!)*)* -(+) eD:4D:hjw~qt}D:\"D:ceD:4D:tw{yt}kD:\"D:cDDD:yhhTw{yt}DDD:\"DDD:jw5JWDDD:4DDD:tw{yt}kDDD:\"CcDDD:tw{yt}DDD:\"DDD:yb5YBDDD:4DDD:vyu}DDD:\"DDD:YbɁjzya{yv{yDDD:4DDD:b|Gtw{yt}DDD:\"DDD:ybDDD:e4cDDD:tw{yt}DDD:\"DDD:{k5[BDDD:4DDD:vyu}DDD:\"DDD:Ĕ}ŹlqvyDDD:4DDD:b|Gtw{yt}DDD:\"DDD:{kDDD:e4cDDD:tw{yt}DDD:\"DDD:}l5]]DDD:4DDD:vyu}DDD:\"DDD:]}klqDDD:4DDD:b|Gtw{yt}DDD:\"DDD:}lDDD:e4cDDD:tw{yt}DDD:\"DDD:}v5MKDDD:4DDD:vyu}DDD:\"DDD:]vtqkpDDD:4DDD:b|Gtw{yt}DDD:\"DDD:}v5mkDDD:e4cDDD:tw{yt}DDD:\"DDD:pj5PJDDD:4DDD:vyu}DDD:\"DDD:PjnylksqDDD:4DDD:b|Gtw{yt}DDD:\"DDD:pjDDD:e4cDDD:tw{yt}DDD:\"DDD:tn5TNDDD:4DDD:vyu}DDD:\"DDD:Tylnq}ŹmDDD:4DDD:b|Gtw{yt}DDD:\"DDD:tnDDD:e4cDDD:tw{yt}DDD:\"DDD:tl5TLDDD:4DDD:vyu}DDD:\"DDD:Tq}lmnqūDDD:4DDD:b|Gtw{yt}DDD:\"DDD:tlDDD:e4cDDD:tw{yt}DDD:\"DDD:pm5PMDDD:4DDD:vyu}DDD:\"DDD:UyayjDDD:4DDD:b|Gtw{yt}DDD:\"DDD:pmDDD:e4cDDD:tw{yt}DDD:\"DDD:ht5HTDDD:4DDD:vyu}DDD:\"DDD:HwtksqDDD:4DDD:b|Gtw{yt}DDD:\"DDD:htDDD:e4cDDD:tw{yt}DDD:\"DDD:hl5HLDDD:4DDD:vyu}DDD:\"DDD:HwjlmmòkDDD:4DDD:b|Gtw{yt}DDD:\"DDD:hlDDD:e4cDDD:tw{yt}DDD:\"DDD:jw5JWDDD:4DDD:vyu}DDD:\"DDD:JwuúvěDDD:4DDD:b|Gtw{yt}DDD:\"DDD:jwDDD:e4cDDD:tw{yt}DDD:\"DDD:ks5KSDDD:4DDD:vyu}DDD:\"DDD:Ktwn}vĕqvyDDD:4DDD:b|Gtw{yt}DDD:\"DDD:ksDDD:e4cDDD:tw{yt}DDD:\"DDD:kn5K]DDD:4DDD:vyu}DDD:\"DDD:Kn}vksyDDD:4DDD:b|Gtw{yt}DDD:\"DDD:knDDD:e4cDDD:tw{yt}DDD:\"DDD:}t5_JDDD:4DDD:vyu}DDD:\"DDD:΍ΣΣίΥΡ΢δDDD:4DDD:b|Gtw{yt}DDD:\"DDD:}v5mkDDD:e4cDDD:tw{yt}DDD:\"DDD:z5Z_DDD:4DDD:vyu}DDD:\"DDD:ЉђУЫШјљТРDDD:4DDD:b|Gtw{yt}DDD:\"DDD:z5Z_DDD:e4cDDD:tw{yt}DDD:\"DDD:jm5JMDDD:4DDD:vyu}DDD:\"DDD:ићљљТРСDDD:4DDD:b|Gtw{yt}DDD:\"DDD:jmDDD:e4cDDD:tw{yt}DDD:\"DDD:ms5MYDDD:4DDD:vyu}DDD:\"DDD:лТјШяХљєТШDDD:4DDD:b|Gtw{yt}DDD:\"DDD:msDDD:e4cDDD:tw{yt}DDD:\"DDD:sy5_]DDD:4DDD:vyu}DDD:\"DDD:ჽ჈ჸ჏჻ჂჀDDD:4DDD:b|Gtw{yt}DDD:\"DDD:syDDD:eEeD:4D:vynqylqwvD:\"D:cDDD:vynqylqwvLyzkDDD:\"CcDDD:k{j}}vGq|DDD:\").-((()4DDD:lqlt}DDD:\"DDD:Y{ykěDDD:4DDD:ljyvktylqwvGs}aDDD:\"DDD:pwu}DDD:4DDD:{wvl}vlGlah}DDD:\"DDD:|avyuq{Gk{j}}vDDD:4DDD:q{wvkDDD:\"cDDD:tqplGlp}u}DDD:\"cDDD:y{lqn}Gklyl}DDD:\"DDD:pllhk\"77quy}k6zwtl6}m7uwzqt}7vyn5zyj7tqpl5lp}u}7pwu}5~w{mk}|6hvDDD:4DDD:qvy{lqn}Gklyl}DDD:\"DDD:pllhk\"77quy}k6zwtl6}m7uwzqt}7vyn5zyj7tqpl5lp}u}7pwu}6hvDDD:e4DDD:|yjsGlp}u}DDD:\"cDDD:y{lqn}Gklyl}DDD:\"DDD:pllhk\"77quy}k6zwtl6}m7uwzqt}7vyn5zyj7tqpl5lp}u}7pwu}5~w{mk}|6hvDDD:4DDD:qvy{lqn}Gklyl}DDD:\"DDD:pllhk\"77quy}k6zwtl6}m7uwzqt}7vyn5zyj7tqpl5lp}u}7pwu}6hvDDD:ee4DDD:|}}htqvsGktmDDD:\"DDD:pwu}DDD:e4cDDD:k{j}}vGq|DDD:\")*((()4DDD:lqlt}DDD:\"DDD:Uyybqv}DDD:4DDD:ljyvktylqwvGs}aDDD:\"DDD:|qk{wn}jaGklwj}kDDD:4DDD:{wvl}vlGlah}DDD:\"DDD:|avyuq{Gk{j}}vDDD:4DDD:q{wvkDDD:\"cDDD:tqplGlp}u}DDD:\"cDDD:y{lqn}Gklyl}DDD:\"DDD:pllhk\"77quy}k6zwtl6}m7uwzqt}7vyn5zyj7zyks}l5~w{mk}|6hvDDD:4DDD:qvy{lqn}Gklyl}DDD:\"DDD:pllhk\"77quy}k6zwtl6}m7uwzqt}7vyn5zyj7zyks}l6hvDDD:e4DDD:|yjsGlp}u}DDD:\"cDDD:y{lqn}Gklyl}DDD:\"DDD:pllhk\"77quy}k6zwtl6}m7uwzqt}7vyn5zyj7zyks}l5~w{mk}|6hvDDD:4DDD:qvy{lqn}Gklyl}DDD:\"DDD:pllhk\"77quy}k6zwtl6}m7uwzqt}7vyn5zyj7zyks}l6hvDDD:ee4DDD:|}}htqvsGktmDDD:\"DDD:klwj}kDDD:e4cDDD:k{j}}vGq|DDD:\"+((()4DDD:lqlt}DDD:\"DDD:[ymlěDDD:4DDD:ljyvktylqwvGs}aDDD:\"DDD:k}yj{pDDD:4DDD:{wvl}vlGlah}DDD:\"DDD:k}yj{pDDD:4DDD:q{wvkDDD:\"cDDD:tqplGlp}u}DDD:\"cDDD:y{lqn}Gklyl}DDD:\"DDD:pllhk\"77quy}k6zwtl6}m7uwzqt}7vyn5zyj7tqpl5lp}u}7k}yj{p5~w{mk}|6hvDDD:4DDD:qvy{lqn}Gklyl}DDD:\"DDD:pllhk\"77quy}k6zwtl6}m7uwzqt}7vyn5zyj7tqpl5lp}u}7k}yj{p6hvDDD:e4DDD:|yjsGlp}u}DDD:\"cDDD:y{lqn}Gklyl}DDD:\"DDD:pllhk\"77quy}k6zwtl6}m7uwzqt}7vyn5zyj7tqpl5lp}u}7k}yj{p5~w{mk}|6hvDDD:4DDD:qvy{lqn}Gklyl}DDD:\"DDD:pllhk\"77quy}k6zwtl6}m7uwzqt}7vyn5zyj7tqpl5lp}u}7k}yj{p6hvDDD:ee4DDD:|}}htqvsGktmDDD:\"DDD:k}yj{pDDD:e4cDDD:k{j}}vGq|DDD:\".((()4DDD:lqlt}DDD:\"DDD:[wu}vbqDDD:4DDD:ljyvktylqwvGs}aDDD:\"DDD:wj|}jkDDD:4DDD:{wvl}vlGlah}DDD:\"DDD:wj|}jkDDD:4DDD:q{wvkDDD:\"cDDD:tqplGlp}u}DDD:\"cDDD:y{lqn}Gklyl}DDD:\"DDD:pllhk\"77quy}k6zwtl6}m7uwzqt}7vyn5zyj7tqpl5lp}u}7j}{}qhl5~w{mk}|6hvDDD:4DDD:qvy{lqn}Gklyl}DDD:\"DDD:pllhk\"77quy}k6zwtl6}m7uwzqt}7vyn5zyj7tqpl5lp}u}7j}{}qhl6hvDDD:e4DDD:|yjsGlp}u}DDD:\"cDDD:y{lqn}Gklyl}DDD:\"DDD:pllhk\"77quy}k6zwtl6}m7uwzqt}7vyn5zyj7tqpl5lp}u}7j}{}qhl5~w{mk}|6hvDDD:4DDD:qvy{lqn}Gklyl}DDD:\"DDD:pllhk\"77quy}k6zwtl6}m7uwzqt}7vyn5zyj7tqpl5lp}u}7j}{}qhl6hvDDD:ee4DDD:|}}htqvsGktmDDD:\"DDD:wj|}jkDDD:e4cDDD:k{j}}vGq|DDD:\"!((()4DDD:lqlt}DDD:\"DDD:[wvlDDD:4DDD:ljyvktylqwvGs}aDDD:\"DDD:y{{wmvlDDD:4DDD:{wvl}vlGlah}DDD:\"DDD:hjw~qt}DDD:4DDD:q{wvkDDD:\"cDDD:tqplGlp}u}DDD:\"cDDD:y{lqn}Gklyl}DDD:\"DDD:pllhk\"77quy}k6zwtl6}m7|}tqn}jaG}yl}j7uwzqt}7vyn5zyj7mk}jGytl6hvDDD:4DDD:qvy{lqn}Gklyl}DDD:\"DDD:pllhk\"77quy}k6zwtl6}m7|}tqn}jaG}yl}j7uwzqt}7vyn5zyj7mk}jGytlGwmltqv}6hvDDD:e4DDD:|yjsGlp}u}DDD:\"cDDD:y{lqn}Gklyl}DDD:\"DDD:pllhk\"77quy}k6zwtl6}m7|}tqn}jaG}yl}j7uwzqt}7vyn5zyj7mk}jGytl6hvDDD:4DDD:qvy{lqn}Gklyl}DDD:\"DDD:pllhk\"77quy}k6zwtl6}m7|}tqn}jaG}yl}j7uwzqt}7vyn5zyj7mk}jGytlGwmltqv}6hvDDD:ee4DDD:|}}htqvsGktmDDD:\"DDD:hjw~qt}DDD:eEeD:4D:vwlq~q{ylqwvkD:\"D:cDDD:qk[wv~qmj}|DDD:\"~ytk}4DDD:vwlq~q{ylqwvkDDD:\"CE4DDD:hmkpVwlq~q{ylqwvKlylmkDDD:\"DDD:MVSVWOVDDD:eD:4D:yt}jlD:\"D:cDDD:|qkuqkk}|DDD:\"ceeD:4D:k}yj{pD:\"D:cDDD:pqklwjaDDD:\"cDDD:|}~ymtlDDD:\"CEeeD:4D:kakl}uD:\"D:cDDD:mk}jHj}~}jj}|Yhh}yjyv{}DDD:\"vmtteD:4D:jylqvkD:\"D:cDDD:{twk}|JylqvkDDD:\"cDDD:{twk}|Jylqv[yj|Wj|}jQ|kDDD:\"ce4DDD:jylqv^yqt}|Wj|}jQ|kDDD:\"ceeeD:4D:j}{}vltaNq}o}|Hjwnq|}jkD:\"D:cDDD:wvzwyj|qvH}jkqkl}|DDD:\"cDDD:qk[wuht}l}|DDD:\"~ytk}eeD:4D:y{lqn}[wvn}jkylqwvkD:\"D:cDDD:nqkql}|[wvn}jkylqwvkDDD:\"ceeD:4D:tqn}Y{lqnqlaD:\"D:cDDD:klyjl}|Y{lqnqlq}kZaWj|}jQ|YlLqu}DDD:\"ceeD:4D:ljy{sqv[wvk}vlkD:\"D:cDDD:{wvk}vlkYttwoYttJ}im}klKlyl}DDD:\"DDD:mvk}lDDD:4DDD:{wvk}vlk_}l[wv~qJ}im}klKlyl}DDD:\"DDD:mvk}lDDD:4DDD:{wvk}vlkKyn}[wv~qJ}im}klKlyl}DDD:\"DDD:mvk}lDDD:4DDD:qvqlqyt[wv~qDDD:\"cDDD:yhhk~ta}jDDD:\"cDDD:}vyzt}|DDD:\"ljm}e4DDD:kqvmtyjDDD:\"cDDD:}vyzt}|DDD:\"ljm}ee4DDD:qk[wvk}vlk]vyzt}|DDD:\"~ytk}eD:4D:|qv}WmlD:\"D:cDDD:}w~}v{qvDDD:\"cDDD:qvqlqytZwllwuKp}}lKpwovYlDDD:\"vmtt4DDD:k}{wv|yjaZwllwuKp}}lKpwovYlDDD:\"vmtteeD:4D:Gh}jkqklD:\"D:cDDD:n}jkqwvDDD:\"-4DDD:j}pa|jyl}|DDD:\"ljm}eD:e:"
+        },
+        {
+          "name": "__mp_opt_in_out_d34cbdea4b58a3b884e4b999930076ef",
+          "value": "0"
+        },
+        {
+          "name": "BoltDeliveryClient.languageLocale",
+          "value": "ro-RO"
+        },
+        {
+          "name": "mmkv_9$a_store_9$a_clickEvents",
+          "value": ":cD:hjwnq|}jG{yj|D:\"CEe:"
+        },
+        {
+          "name": "mmkv_9$a_store_9$a_impressionEvents",
+          "value": ":cD:hjwnq|}jG{yj|D:\"CE4D:zyvv}jD:\"CE4D:|qkpD:\"CEe:"
+        },
+        {
+          "name": "mmkv_9$a_network-logger_9$a___mmkv_internal_is_initialised",
+          "value": ":ljm}:"
+        },
+        {
+          "name": "mmkv_9$a_main_9$a___mmkv_internal_is_initialised",
+          "value": ":ljm}:"
+        },
+        {
+          "name": "mmkv_9$a_store_9$a___mmkv_internal_is_initialised",
+          "value": ":ljm}:"
+        },
+        {
+          "name": "mmkv_9$a_geofencing_9$a___mmkv_internal_is_initialised",
+          "value": ":ljm}:"
+        },
+        {
+          "name": "mmkv_9$a_store_9$a_TANSTACK_QUERY_CACHE",
+          "value": ":cD:zmkl}jD:\"D:D:4D:lqu}klyuhD:\")/!)*)* !+ *+4D:{tq}vlKlyl}D:\"cD:umlylqwvkD:\"CE4D:im}jq}kD:\"CcD:|}pa|jyl}|YlD:\")/!)*)* !+ *+4D:klyl}D:\"cD:|ylyD:\"cD:~}ylmj}kD:\"cee4D:|ylyMh|yl}[wmvlD:\"*4D:|ylyMh|yl}|YlD:\")/!)*)* !*+,*4D:}jjwjD:\"vmtt4D:}jjwjMh|yl}[wmvlD:\"(4D:}jjwjMh|yl}|YlD:\"(4D:~}l{p^yqtmj}[wmvlD:\"(4D:~}l{p^yqtmj}J}ykwvD:\"vmtt4D:~}l{pU}lyD:\"vmtt4D:qkQvnytq|yl}|D:\"~ytk}4D:klylmkD:\"D:km{{}kkD:4D:~}l{pKlylmkD:\"D:q|t}D:e4D:im}jaS}aD:\"CD:klwj}5~}ylmj}kD:4,,-/ 4+*-4D:m}klD:E4D:im}jaPykpD:\"D:CDDD:klwj}5~}ylmj}kDDD:4,,-/ 4+*-4DDD:m}klDDD:ED:e4cD:|}pa|jyl}|YlD:\")/!)*)* !+ *+4D:klyl}D:\"cD:|ylyD:\"cD:~}ylmj}kD:\"cee4D:|ylyMh|yl}[wmvlD:\")4D:|ylyMh|yl}|YlD:\")/!)*)* !+*)+4D:}jjwjD:\"vmtt4D:}jjwjMh|yl}[wmvlD:\"(4D:}jjwjMh|yl}|YlD:\"(4D:~}l{p^yqtmj}[wmvlD:\"(4D:~}l{p^yqtmj}J}ykwvD:\"vmtt4D:~}l{pU}lyD:\"vmtt4D:qkQvnytq|yl}|D:\"~ytk}4D:klylmkD:\"D:km{{}kkD:4D:~}l{pKlylmkD:\"D:q|t}D:e4D:im}jaS}aD:\"CD:klwj}5~}ylmj}kD:4,,-/ 4+*-4D:ymlpD:E4D:im}jaPykpD:\"D:CDDD:klwj}5~}ylmj}kDDD:4,,-/ 4+*-4DDD:ymlpDDD:ED:eEee:"
+        }
+      ]
+    }
+  ]
+}
