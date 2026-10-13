@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { createDirectLink } from '../utils';
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://price-scraper-backend-6hlu.onrender.com';
+
 export default function LeBab() {
   const [productName, setProductName] = useState('')
   const [priceResult, setPriceResult] = useState(null);
@@ -15,7 +17,7 @@ export default function LeBab() {
 
     try {
         const params = new URLSearchParams({ selector: productName });
-        const response = await fetch(`/api/prices/current-prices-le-bab?${params.toString()}`, { 
+        const response = await fetch(`${API_BASE_URL}/api/prices/current-prices-le-bab?${params.toString()}`, { 
             method: 'GET',
         });
         const {data: data, message: message, url: url} = await response.json();

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { createDirectLink } from "../utils";
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://price-scraper-backend-6hlu.onrender.com';
+
 export function RollMaster() {
     const [productName, setProductName] = useState('')
     const [loading, setLoading] = useState(false)
@@ -14,7 +16,7 @@ export function RollMaster() {
         setProductUrl(null);
         try {
             const params = new URLSearchParams({ selector: productName });
-            const response = await fetch('/api/prices/current-prices-roll-master?'+params);
+            const response = await fetch(`${API_BASE_URL}/api/prices/current-prices-roll-master?`+params);
             const { data: priceData, url: url, message: priceMessage } = await response.json();
             console.log(priceMessage)
             setPriceResult(priceData);
