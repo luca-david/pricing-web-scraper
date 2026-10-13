@@ -176,7 +176,8 @@ export const getCurrentPricesCAndA = async (req: Request, res: Response) => {
 
     return res.status(200).json({
         'message': 'Succesfully retrieved prices from site',
-        'data': price
+        'data': price,
+        'url': url
     });
 }
 

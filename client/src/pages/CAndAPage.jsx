@@ -1,23 +1,27 @@
 import { useState } from 'react'
+import { createDirectLink } from '../utils';
 
 export default function CAndAPage() {
   const [productName, setProductName] = useState('')
   const [priceResult, setPriceResult] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [productUrl, setProductUrl] = useState('');
 
   const handleSubmit = async (e) => {
     if (e) e.preventDefault();
     setLoading(true);
     setPriceResult(null) //reset previous result
+    setProductUrl(null)
 
     try {
         const params = new URLSearchParams({ selector: productName });
         const response = await fetch(`/api/prices/current-prices-canda?${params.toString()}`, { 
             method: 'GET',
         });
-        const data = await response.json();
+        const {data: data, url: url} = await response.json();
         //store the backend response in state
         setPriceResult(data);
+        setProductUrl(url);
     } catch (error) {
         console.error("Error fetching price", error);
     } finally {
@@ -51,15 +55,15 @@ export default function CAndAPage() {
         </div>
 
         <div className='button-group'>
-        <button className='counter' onClick={() => setProductName("Shaorma medie Crispy")}>
+        <button type='button' className='counter' onClick={() => setProductName("Shaorma medie Crispy")}>
             Sharoma Crispy Medie
         </button>
 
-        <button className='counter' onClick={() => setProductName("Shaorma medie")}>
+        <button type='button' className='counter' onClick={() => setProductName("Shaorma medie")}>
             Sharoma Pui Medie
         </button>
 
-        <button className='counter' onClick={() => setProductName("Shaorma uriașă  1KG")}>
+        <button type='button' className='counter' onClick={() => setProductName("Shaorma uriașă  1KG")}>
             Sharoma Pui La Kilogram
         </button>
         </div>
@@ -67,12 +71,17 @@ export default function CAndAPage() {
         {/* Display Results */}
         {priceResult && (
             <div style={{ marginTop: '20px', padding: '15px', border: '1px solid #ccc', borderRadius: '8px' }}>
-            <h3>Selected: {productName}</h3>
-            <p><strong>Status:</strong> {priceResult.message}</p>
+            <h3>
+                { 'Selected: ' } 
+                <a
+                    href={createDirectLink(productUrl, productName)} target="_blank" rel="noopener noreferrer">
+                    { productName }
+                </a>
+            </h3>
             
-            {priceResult.data ? (
+            {priceResult ? (
                 <div>
-                <p><strong>Price:</strong> {priceResult.data.stringPrice} RON</p>
+                <p><strong>Price:</strong> { priceResult.stringPrice } </p>
                 </div>
             ) : (
                 <p>No price data found for this product.</p>

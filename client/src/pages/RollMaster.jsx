@@ -1,19 +1,11 @@
 import { useState } from "react";
+import { createDirectLink } from "../utils";
 
 export function RollMaster() {
     const [productName, setProductName] = useState('')
     const [loading, setLoading] = useState(false)
     const [priceResult, setPriceResult] = useState(null)
     const [productUrl, setProductUrl] = useState(null)
-
-    const createDirectLink = (url, productName) => {
-        if (!url) return '#';
-        
-        //encode name (spaces become %20)
-        const encodedName = encodeURIComponent(productName.trim());
-
-        return `${url}#:~:text=${encodedName}`;
-    };
 
     const handleSubmit = async (e) => {
         if (e) e.preventDefault();
