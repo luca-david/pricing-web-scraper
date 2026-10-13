@@ -203,6 +203,7 @@ export const getCurrentPricesRollMaster = async (req: Request, res: Response) =>
 
     return res.status(200).json({
         'message': 'Successfully retrieved the price for ' + selector ,
-        'data': price
+        'data': price,
+        'url': url
     })
 }

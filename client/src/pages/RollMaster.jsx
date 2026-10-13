@@ -4,17 +4,32 @@ export function RollMaster() {
     const [productName, setProductName] = useState('')
     const [loading, setLoading] = useState(false)
     const [priceResult, setPriceResult] = useState(null)
+    const [productUrl, setProductUrl] = useState(null)
+
+    const createDirectLink = (url, productName) => {
+        if (!url) return '#';
+        
+        const cleanName = productName.replace(/\s+/g, ' ').trim();
+        console.log(cleanName)
+        //encode name (spaces become %20)
+        const encodedName = encodeURIComponent(cleanName);
+
+        return `${url}#:~:text=${encodedName}`;
+    };
 
     const handleSubmit = async (e) => {
         if (e) e.preventDefault();
         setLoading(true);
         setPriceResult(null);
+        setProductUrl(null);
         try {
             const params = new URLSearchParams({ selector: productName });
             const response = await fetch('/api/prices/current-prices-roll-master?'+params);
-            const { data: priceData, message: priceMessage } = await response.json();
+            const { data: priceData, url: url, message: priceMessage } = await response.json();
             console.log(priceMessage)
             setPriceResult(priceData);
+            setProductUrl(url);
+            console.log('url: ', url)
         } catch (error) {
             console.error('Error while fetching the price', error);
         } finally {
@@ -68,9 +83,11 @@ export function RollMaster() {
                 {/* Display Results */}
                 {priceResult && (
                 <div style={{ marginTop: '20px', padding: '15px', border: '1px solid #ccc', borderRadius: '8px' }}>
-                    <h3>Selected: {productName}</h3>
-                    <p><strong>Status:</strong> {priceResult.message}</p>
-                    
+                    <h3> {'Selected: '}
+                         <a href={createDirectLink(productUrl, productName)} target="_blank" rel="noopener noreferrer">
+                            { productName } 
+                         </a>
+                    </h3>
                     {priceResult ? (
                         <div>
                         <p><strong>Price:</strong> {priceResult.stringPrice}</p>
